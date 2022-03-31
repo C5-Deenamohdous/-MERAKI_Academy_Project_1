@@ -8,7 +8,7 @@
     height:500px;
    width: 100%;
   }
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 600px) {
       .hero{
 background-color: white;
       }
@@ -31,16 +31,37 @@ padding-top: 50px;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-button{
+/* button{
     background-color: black;
     color: white;
-    width: 120px;
+    width: 200px;
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
+
 
 .con2{
+    background-color: white;
+    padding-top: 200px;
 display: flex;
-flex-direction: column;
+
+flex-wrap: wrap;
+ gap: 20px;
 width: 100%;
+}
+.first{
+    /* display: flex; */
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    /* border-right: solid black; */
+}
+.second{
+    flex-direction:row;
+}
+.third{
+   display: flex;
+   flex-direction:row;
+   justify-content: center;
+width: 50%;
 }
