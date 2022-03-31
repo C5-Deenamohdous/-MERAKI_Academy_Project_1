@@ -49,19 +49,30 @@ flex-wrap: wrap;
  gap: 20px;
 width: 100%;
 }
+.title{
+  
+    text-align: center;  
+}
 .first{
     /* display: flex; */
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    /* border-right: solid black; */
+    border-right: solid black;
 }
 .second{
+
     flex-direction:row;
 }
-.third{
+#third{
    display: flex;
    flex-direction:row;
-   justify-content: center;
-width: 50%;
+  
+/* width: 20%; */
+
+}
+.con3{
+    padding-top: 100px;
+    font-size: 30px;
+    color: red;
 }
