@@ -1,18 +1,8 @@
 /* START CODE UNDER THIS LINE */
+const gamecontainer = document.querySelector(".container");
+console.log(gamecontainer);
 //from  container 1  press start to begin the game
 // it will take you to container 2 (link start  button with con 2 )
-
-// const start = document.createElement('button')
-// start.innerHTML="Get Start"
-// const hero = document.querySelector('body');
-// start.id="start"
-//   body.append(start);
-// const starting=()=>{
-
-// }
-// start.addEventListener('click', starting)
-
-
 
 
 //  make an array with movies ele
@@ -51,21 +41,20 @@ const array = [
 // [''vikings'', '“'friends”, “New Amsterdam”, “the good doctor” , “dark” , “Chernobyl”, “breaking bad” , “when they see us “ , “banshee”, “Unbelievable”, “lupin”
 
 //! arrayfor each button
-const allButtons=()=>{
-array.forEach((element) => {
+
+array.forEach((element , index) => {
+  const container=document.createElement("div")
   const button = document.createElement("button");
   button.innerText = element;
+    button.class = "button";
+  container.append(button);
+  gamecontainer.append(container)
 
-  //    console.log(button);
-
-  const body = document.querySelector("body");
-  body.append(button);
-  body.class = "third";
   button.style.color = "red";
   button.style.width = "30px";
-  //    button.style.alignItems
+
 });
-}
+//}
 
 //! array for series to become randomly
 const series = ["vikings", "banshee"];
@@ -142,47 +131,48 @@ for (let i = 0; i < element.length; i++) {
 //    }
 //   };
 //   press();
-// button.addEventlistener("click", press);
-const body = document.querySelector('body');
-{
-const start = document.createElement('button')
-start.innerHTML="Get Start"
+// // button.addEventlistener("click", press);
+// const body = document.querySelector('body');
+// {
+// const start = document.createElement('button')
+// start.innerHTML="Get Start"
 
-start.id="start"
- body.append(start);
+// start.id="start"
+//  body.append(start);
 
-const starting=()=>{
+// const starting=()=>{
    
-}
-start.addEventListener('click', starting)
+// }
+// start.addEventListener('click', starting)
 
 
-//!---- why give me an erroe on img ?????
+// //!---- why give me an erroe on img ?????
 
-const music = document.createElement('button')
-music.innerHTML="music"
+// const music = document.createElement('button')
+// music.innerHTML="music"
 
-music.id="music"
-  body.append(music);
+// music.id="music"
+//   body.append(music);
  
-const music1=()=>{
-    let audio = new Audio("https://www.youtube.com/watch?v=WJ3-F02-F_Y");
-   audio.play();
-}
-music.addEventListener('click', music1)
+// const music1=()=>{
+//     let audio = new Audio("https://www.youtube.com/watch?v=WJ3-F02-F_Y");
+//    audio.play();
+// }
+// music.addEventListener('click', music1)
 
 
 // const footer = document.querySelector('footer');
-const tryAgain = document.createElement('button')
-tryAgain.innerHTML="tryAgain"
+// const tryAgain = document.createElement('button')
+// tryAgain.innerHTML="tryAgain"
 
-tryAgain.id="footer"
- body.append(tryAgain);
+// tryAgain.id="footer"
+//  body.append(tryAgain);
 
-const ending=()=>{
-   // take you to new game 
-}
-tryAgain.addEventListener('click', ending)
+// const ending=()=>{
+//    // take you to new game 
+// }
+// tryAgain.addEventListener('click', ending)
 
-}
+//
+//  }
 
