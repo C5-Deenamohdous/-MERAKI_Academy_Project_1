@@ -1,6 +1,20 @@
 /* START CODE UNDER THIS LINE */
 //from  container 1  press start to begin the game
 // it will take you to container 2 (link start  button with con 2 )
+
+// const start = document.createElement('button')
+// start.innerHTML="Get Start"
+// const hero = document.querySelector('body');
+// start.id="start"
+//   body.append(start);
+// const starting=()=>{
+
+// }
+// start.addEventListener('click', starting)
+
+
+
+
 //  make an array with movies ele
 // array wieh letter
 //  loop ---> creat button <ele>(id)
@@ -36,11 +50,8 @@ const array = [
 ];
 // [''vikings'', '“'friends”, “New Amsterdam”, “the good doctor” , “dark” , “Chernobyl”, “breaking bad” , “when they see us “ , “banshee”, “Unbelievable”, “lupin”
 
-
-// determine number of livves 
-const showLives = document.getElementById("mylives");
-
 //! arrayfor each button
+const allButtons=()=>{
 array.forEach((element) => {
   const button = document.createElement("button");
   button.innerText = element;
@@ -54,10 +65,13 @@ array.forEach((element) => {
   button.style.width = "30px";
   //    button.style.alignItems
 });
+}
+
 //! array for series to become randomly
 const series = ["vikings", "banshee"];
 //make new array called series
 // every element in array is come randomly
+
 const random = Math.floor(Math.random() * series.length);
 console.log(random);
 
@@ -89,45 +103,86 @@ for (let i = 0; i < element.length; i++) {
  Borders.class="lines"
   Borders.innerText="_____ ";
   body.append(Borders)
-
- 
 }
  });
 
+ //!-------- how to defined button inside first loop  ????? 
+ //!--------- why the image is not appear in body ?????
+ //!--------- and how to change img  ??????? 
  
-const press =() => {
- for (let i = 0; i < series.length; i++) { 
-  
-     console.log(series[i]);
- if (button ===series[i] ) {
- 
+
+//  for (let i = 0; i < series.length; i++) { 
+//    allButtons();
+//      console.log(series[i]);
+
+//  if (button ===series[i] ) {
+//  Borders.append(button)
+//  button.style.opacity = "0.3";
+   
 // make loop in every char in ele
 //  choosing button of letter if  letter === one of char in element
-    button.style.opacity = "0.2";
+    
     // drag the letter  in border in right place &&&& low the opacity of the button
-  } else {
+// }}
+// }
+//   } else {
     // else ---- attach img of hangman number of tries = 6 
     //and remove unused button 
     // so i have aloop here 
     // create img tag with position hide
-     const body = document.querySelector("body");
-   const img=document.createElement('image');
-    button.remove();
+//      const body = document.querySelector("body");
+//    const img=document.createElement('image');
+//     button.remove();
    // img.src = "./pic2";
    //  body.append(img);
    //  img.style.position="hide"; 
    //  img.src = "./pic3";
    
-    }
-   }
-    button.addEventlistener("click", press);
-  };
-  press();
+//     }
+//    }
+//   };
+//   press();
+// button.addEventlistener("click", press);
+const body = document.querySelector('body');
+{
+const start = document.createElement('button')
+start.innerHTML="Get Start"
+
+start.id="start"
+ body.append(start);
+
+const starting=()=>{
+   
+}
+start.addEventListener('click', starting)
 
 
-  
+//!---- why give me an erroe on img ?????
+
+const music = document.createElement('button')
+music.innerHTML="music"
+
+music.id="music"
+  body.append(music);
+ 
+const music1=()=>{
+    let audio = new Audio("https://www.youtube.com/watch?v=WJ3-F02-F_Y");
+   audio.play();
+}
+music.addEventListener('click', music1)
 
 
+// const footer = document.querySelector('footer');
+const tryAgain = document.createElement('button')
+tryAgain.innerHTML="tryAgain"
 
+tryAgain.id="footer"
+ body.append(tryAgain);
 
+const ending=()=>{
+   // take you to new game 
+}
+tryAgain.addEventListener('click', ending)
+
+}
 
