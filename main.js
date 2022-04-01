@@ -53,87 +53,15 @@ const array = [
 // start.addEventListener("click",gameFunc );
 
 //! arrayfor each button
-
-array.forEach((element , index) => {
-
-  const button = document.createElement("button");
-  button.innerText = element;
-  const body = document.querySelector("body");
-  body.append(button);
-  button.style.color = "red";
-  button.style.width = "30px";
-  //    button.style.alignItems
-  
-});
-// const letterButton=document.querySelector("button")
-// letterButton.addEventListener("click", buttonFunction)
-// //}
-// const buttonFunction=()=>{
-
-// }
-// //! array for series to become randomly
-// const series = ["vikings", "banshee"];
-// //make new array called series
-// // every element in array is come randomly
-
-// const random = Math.floor(Math.random() * series.length);
-// console.log(random);
-
-// //loop ------length of ele = numbers of bottom borders
-// // convert ele to split array
-
-// series.forEach((element) => {
-//   element.split("");
-//   console.log( element.split(""));
-  
-//   // create a p tag to put element
-//   const p = document.createElement("p");
-//   const body = document.querySelector("body");
-//   p.innerText = element;
-//   p.class = "ele";
-//   body.append(p);
-// //  p.style.display = "none";
-
-// //   console.log(p);
-
-//   // //! create border tag to contain each letter ??????
-//    // element.length=Borders
-// //   console.log(Borders);  
-   
-// for (let i = 0; i < element.length; i++) { 
- 
-//  const  Borders = document.createElement('border')
-//  const body = document.querySelector("body");
-//  Borders.class="lines"
-//   Borders.innerText="_____ ";
-//   body.append(Borders)
-// }
-//  });
-
- //!-------- how to defined button inside first loop  ????? 
- //!--------- why the image is not appear in body ?????
- //!--------- and how to change img  ??????? 
- 
-
-//  for (let i = 0; i < series.length; i++) { 
-//    allButtons();
-//      console.log(series[i]);
-
-//  if (button ===series[i] ) {
+const check =()=>{
+// check after click if clicked letter is inside the word  
+// if (button ===series[i] 
 //  Borders.append(button)
 //  button.style.opacity = "0.3";
-   
-// make loop in every char in ele
-//  choosing button of letter if  letter === one of char in element
-    
-    // drag the letter  in border in right place &&&& low the opacity of the button
-// }}
-// }
-//   } else {
-    // else ---- attach img of hangman number of tries = 6 
-    //and remove unused button 
-    // so i have aloop here 
-    // create img tag with position hide
+// drag the letter  in border in right place &&&& low the opacity of the button
+//  else ---- attach img of hangman number of tries = 6 
+ //and remove unused button 
+ // create img tag with position hide
 //      const body = document.querySelector("body");
 //    const img=document.createElement('image');
 //     button.remove();
@@ -141,24 +69,63 @@ array.forEach((element , index) => {
    //  body.append(img);
    //  img.style.position="hide"; 
    //  img.src = "./pic3";
-   
-//     }
-//    }
-//   };
-//   press();
-// // button.addEventlistener("click", press);
-// const body = document.querySelector('body');
-// {
-// const start = document.createElement('button')
-// start.innerHTML="Get Start"
 
-// start.id="start"
-//  body.append(start);
+}
+array.forEach((element , index) => {
+const body  = document.querySelector("body");
+  const button = document.createElement("button");
+  button.innerText = element;
+  body.append(button);
+  button.style.color = "red";
+  button.style.width = "30px";
+  button.addEventListener("click", check)
+  
+});
 
-// const starting=()=>{
-   
-// }
-// start.addEventListener('click', starting)
+// //! array for series to become randomly
+const series = ["vikings", "banshee"];
+//make new array called series
+// every element in array is come randomly
+
+const random = Math.floor(Math.random() * series.length);
+console.log(random);
+
+//loop ------length of ele = numbers of bottom borders
+// convert ele to split array
+
+series.forEach((element ,) => {
+  element.split("");
+  console.log( element.split(""));
+  
+  // create a p tag to put element
+  const p = document.createElement("p");
+  const body = document.querySelector("body");
+  p.innerText = element;
+  p.class = "ele";
+  body.append(p);
+//  p.style.display = "none";
+//  p.style.display = "block";
+console.log(p);
+  //! create border tag to contain each letter ??????
+  //  element.length=Borders
+  // console.log(Borders);  
+  
+for (let i = 0; i < element.length; i++) { 
+ 
+ const  Borders = document.createElement('border')
+ const body = document.querySelector("body");
+ Borders.class="lines"
+  Borders.innerText="_____ ";
+  body.append(Borders)
+  // Borders.style.display="none"
+  // Borders.style.display="block"
+}
+ });
+
+ //!-------- how to defined button inside first loop  ????? 
+ //!--------- why the image is not appear in body ?????
+ //!--------- and how to change img  ??????? 
+ 
 
 
 // //!---- why give me an erroe on img ?????

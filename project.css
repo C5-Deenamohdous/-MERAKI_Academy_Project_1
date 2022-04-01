@@ -2,12 +2,10 @@
 #p1{
   
         background-image: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f");
-      display: flex;
-  width : 100%;
-        background-size: cover;
         display: flex;
+         width : 100%;
+        background-size: cover;
         flex-wrap: wrap;
-        flex-direction: column;
         height:500px;
        width: 100%;
       }
