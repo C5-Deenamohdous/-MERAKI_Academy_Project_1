@@ -23,6 +23,12 @@ background-color: white;
     width: 50%;
     
 }
+#start{
+background-color:blue;
+color: black;
+width:70px;
+height: 50px;
+}
 .intro{
  /* background-color: rgb(19, 2, 2);  */
      color: rgb(230, 226, 20); 
@@ -31,13 +37,14 @@ background-color: white;
 padding-top: 50px;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* button{
-    background-color: black;
-    color: white;
-    width: 200px;
-    font-size: 30px;
+button{
+    /* background-color: black; */
+    /* color: white; */
+    width:70px;
+    height: 50px;
+    font-size:20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-} */
+}
 #con2{
     display: none;
     background-color: white;
@@ -47,16 +54,22 @@ flex-wrap: wrap;
  gap: 20px;
 width: 100%;
 }
+#buttonCon{
+    width: 50%;
+    flex-direction: column;
+
+}
+
 .title{
 
    flex-direction: row ;
-   width:50%;
+   width:100%;
 }
 .first{
     /* display: flex; */
     flex-direction: column;
     width: 50%;
-    justify-content: center;
+    /* justify-content: center; */
     /* border-right: solid black; */
     border-right: solid black;
 }

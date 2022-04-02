@@ -88,16 +88,13 @@ const body  = document.querySelector("body");
   // button.addEventListener("click", check)
 
 });
-
-// //! array for series to become randomly
-const series = ["vikings", "banshee"];
 //make new array called series
 // every element in array is come randomly
+// //! array for series to become randomly
 
+const series = ["vikings", "banshee"];
 const random = Math.floor(Math.random() * series.length);
 console.log(random);
-
-
 series.forEach((element ,) => {
   element.split("");
   console.log( element.split(""));
