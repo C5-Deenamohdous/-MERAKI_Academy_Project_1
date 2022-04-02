@@ -55,20 +55,26 @@ const array = [
 //! arrayfor each button
 const check =()=>{
 // check after click if clicked letter is inside the word  
-// if (button ===series[i] 
-//  Borders.append(button)
-//  button.style.opacity = "0.3";
-// drag the letter  in border in right place &&&& low the opacity of the button
+console.log(e.target.id);
+if(index==e.target.id) {
+Borders.append(button);
+ button.style.opacity = "0.3";
+}
+else{
+
+  // const body = document.querySelector("body");
+  // const img=document.createElement('img');
+  // button.remove();
+  // img.src = "./pic2";
+  //  body.append(img);
+  //  img.style.position="none"; 
+  //  img.style.position="block"; 
+  //  img.src = "./pic3";
+}
 //  else ---- attach img of hangman number of tries = 6 
  //and remove unused button 
  // create img tag with position hide
-//      const body = document.querySelector("body");
-//    const img=document.createElement('image');
-//     button.remove();
-   // img.src = "./pic2";
-   //  body.append(img);
-   //  img.style.position="hide"; 
-   //  img.src = "./pic3";
+
 
 }
 array.forEach((element , index) => {
@@ -76,10 +82,11 @@ const body  = document.querySelector("body");
   const button = document.createElement("button");
   button.innerText = element;
   body.append(button);
+  button.class=index
   button.style.color = "red";
   button.style.width = "30px";
-  button.addEventListener("click", check)
-  
+  // button.addEventListener("click", check)
+
 });
 
 // //! array for series to become randomly
@@ -90,8 +97,6 @@ const series = ["vikings", "banshee"];
 const random = Math.floor(Math.random() * series.length);
 console.log(random);
 
-//loop ------length of ele = numbers of bottom borders
-// convert ele to split array
 
 series.forEach((element ,) => {
   element.split("");

@@ -1,0 +1,81 @@
+.hero {
+    background-image: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f");
+    
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:500px;
+   width: 100%;
+  }
+  @media all and (max-width: 600px) {
+      .hero{
+background-color: white;
+      }
+  }
+
+#con1{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    padding-top:250px;
+    width: 50%;
+    
+}
+.intro{
+ /* background-color: rgb(19, 2, 2);  */
+     color: rgb(230, 226, 20); 
+     font-size: 30px; 
+     width: 100%;
+padding-top: 50px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#con2{
+    display: none;
+    background-color: white;
+    padding-top: 200px;
+display: flex;
+flex-wrap: wrap;
+ gap: 20px;
+width: 100%;
+}
+.title{
+
+   flex-direction: row ;
+   width:50%;
+}
+.first{
+    /* display: flex; */
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    /* border-right: solid black; */
+    border-right: solid black;
+}
+.second{
+
+    flex-direction:row;
+}
+
+#third{
+   display: flex;
+   flex-direction:row;
+   justify-content: center;
+width: 50%;
+
+/* width: 20%; */
+
+}
+.con3{
+    padding-top: 100px;
+    font-size: 30px;
+    color: red;
+} 
