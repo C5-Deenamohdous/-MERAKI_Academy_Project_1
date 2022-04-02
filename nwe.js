@@ -51,11 +51,14 @@ const array = [
 
 
 const check =(e)=>{
-// check after click if clicked letter is inside the word  
- console.log(e.target.class);
-// if(index==e.target.class) {
-// console.log(button);
-// }
+  series=series.filter((element, index)=>{ 
+    console.log(e.target.class);
+  
+ if (element[0]==e.target.class){
+   
+  //  Borders.append(e.target.class);
+  }
+  })
 // else{
 
   // const body = document.querySelector("body");
@@ -81,7 +84,7 @@ const check =(e)=>{
     hero.append(con2);
     con2.append(buttonCon);
     buttonCon.append(buttons)
-    buttons.class=index;
+    buttons.class=element;
     buttons.style.color = "red";
     buttons.style.width = "30px";
    
@@ -90,7 +93,7 @@ const check =(e)=>{
    buttons.addEventListener("click", check)
   //! array for series to become randomly
 
-const series = ["vikings", "banshee"];
+let series = ["vikings", "banshee"];
 const random = Math.floor(Math.random() * series.length);
 console.log(random);
 series.forEach((element ,) => {
