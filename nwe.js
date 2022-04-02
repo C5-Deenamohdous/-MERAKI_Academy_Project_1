@@ -6,8 +6,10 @@ const buttons = document.querySelector("#buttonCon");
 const try1 = document.querySelector("#try");
 const img = document.querySelector("#first");
 const con = document.querySelector(".second");
-
-let series = ["vikings", "banshee"];
+const con3 = document.querySelector("#con3");
+const p4=document.querySelector("#p4");
+const about=document.querySelector("#about");
+let series = ["vikings", "banshee","friends","new amsterdam","“the good doctor","dark","chernobyl","breaking bad","when they see us","Unbelievable","lupin"];
 const random = () => {
   return series[Math.floor(Math.random() * series.length)];
 };
@@ -19,24 +21,28 @@ const game = () => {
   con2.style.display = "block";
   word.split('').forEach((element ,index) => {
     const span  = document.createElement('span')
-    span.innerText = '*'
+    span.innerText = ' ___ '
     span.id =index
     con.append(span)
   })
-
-  // Borders.innerText="*";
-  // con2.append(Borders)
-
 };
 start.addEventListener("click", game);
 
 const tryfun = () => {
   con1.style.display = "block";
-  // con3.style.display = "none";
+  con3.style.display = "none";
   con2.style.display = "none";
 };
 
 try1.addEventListener("click", tryfun);
+ 
+const about1=()=>{
+  con1.style.display = "none";
+  con3.style.display = "none";
+  con2.style.display = "none";
+  p4.style.display = "block";
+}
+about.addEventListener("click", about1);
 
 const array = [
   "a",
@@ -98,34 +104,9 @@ array.forEach((element, index) => {
       image.src = imgArr[count].img1;
       img.append(image);
       count++;
+     
     }
   });
 });
 
-//! array for series to become randomly
 
-
-// console.log(random);
-// series.forEach((element ,) => {
-//   element.split("");
-//   console.log( element.split(""));
-
-//   // create a p tag to put element
-//   const p = document.createElement("p");
-
-//   p.innerText = element;
-//   p.class = "ele";
-//   con2.append(p);
-// //  p.style.display = "none";
-// //  p.style.display = "block";
-// console.log(p);
-//! create border tag to contain each letter ??????
-//  element.length=Borders
-// console.log(Borders);
-
-// for (let i = 0; i < element.length; i++) {
-
-//   // Borders.style.display="none"
-//   // Borders.style.display="block"
-// }
-// //  });
