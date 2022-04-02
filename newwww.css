@@ -48,37 +48,42 @@ button{
 #con2{
     display: none;
     background-color: white;
-    padding-top: 200px;
+    padding-top: 150px;
 display: flex;
+flex-direction: column; 
 flex-wrap: wrap;
  gap: 20px;
 width: 100%;
 }
-#buttonCon{
-    width: 50%;
-    flex-direction: column;
-
-}
-
 .title{
-
-   flex-direction: row ;
    width:100%;
+   font-size:30px;
+   padding-left: 500px;
+   /* border: rgb(149, 211, 25); */
+   color: blueviolet;
 }
 .first{
+    padding-right: 0px;
     /* display: flex; */
-    flex-direction: column;
+    flex-direction: row;
     width: 50%;
     /* justify-content: center; */
     /* border-right: solid black; */
     border-right: solid black;
 }
 .second{
-
+    width: 50%;
     flex-direction:row;
 }
+#buttonCon{
+    flex-direction: column; 
+     width: 50%;
+}
+
+
 
 #third{
+    padding-top: 500px;
    display: flex;
    flex-direction:row;
    justify-content: center;
@@ -87,10 +92,26 @@ width: 50%;
 /* width: 20%; */
 
 }
+#p3{
+    padding-top: 400px;
+    background-image:url( "https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.2.1276333606.1639008000") ;
+    background-size: cover;
+}
 .con3{
-   display : "none";
+   
    display: flex;
-
+padding-top: 1500px;
+flex-direction: column;
     font-size: 30px;
-    color: red;
+    color: rgb(192, 29, 119);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 } 
+#try{
+    padding-left: 100px;
+    display: flex;
+    flex-direction:column; 
+   width: 100%; 
+padding-left: 400px;
+ /* background-color: black; */
+}

@@ -3,12 +3,21 @@ const hero= document.querySelector("#hero");
 const start =document.querySelector("#start");
 const con1= document.querySelector("#con1");
 const con2= document.querySelector("#con2");
-
+const buttons= document.querySelector("#buttonCon");
+const try1 = document.querySelector("#try");
 const game=()=>{
     con1.style.display="none";
     con2.style.display="block";
 }
 start.addEventListener("click", game);
+
+const tryfun=()=>{
+  con1.style.display="block";
+  con3.style.display="none";
+  con2.style.display="none";
+}
+
+try1.addEventListener("click", tryfun);
 
 const array = [
     "A",
@@ -41,14 +50,13 @@ const array = [
 
 
 
-const check =()=>{
+const check =(e)=>{
 // check after click if clicked letter is inside the word  
-// console.log(e.target.id);
-if(index==e.target.id) {
-Borders.append(button);
- button.style.opacity = "0.3";
-}
-else{
+ console.log(e.target.class);
+// if(index==e.target.class) {
+// console.log(button);
+// }
+// else{
 
   // const body = document.querySelector("body");
   // const img=document.createElement('img');
@@ -64,20 +72,22 @@ else{
  // create img tag with position hide
 
 
-}
+// }
 
   array.forEach((element , index) => {
 
     const buttons = document.createElement("button");
     buttons.innerText = element;
     hero.append(con2);
-    con2.append(buttons);
+    con2.append(buttonCon);
+    buttonCon.append(buttons)
     buttons.class=index;
     buttons.style.color = "red";
     buttons.style.width = "30px";
-    buttons.addEventListener("click", check)
+   
 
   })
+   buttons.addEventListener("click", check)
   //! array for series to become randomly
 
 const series = ["vikings", "banshee"];
