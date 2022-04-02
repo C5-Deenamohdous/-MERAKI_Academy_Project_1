@@ -31,13 +31,13 @@ background-color: white;
 padding-top: 50px;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-button{
+/* button{
     background-color: black;
     color: white;
     width: 200px;
     font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
 #con2{
     display: none;
     background-color: white;
@@ -75,7 +75,9 @@ width: 50%;
 
 }
 .con3{
-    padding-top: 100px;
+   display : "none";
+   display: flex;
+
     font-size: 30px;
     color: red;
 } 
