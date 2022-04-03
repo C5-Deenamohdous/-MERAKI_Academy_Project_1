@@ -101,13 +101,13 @@ const array = [
 ];
 
 let imgArr = [
-  { img1: "./pic1.png", id: 0 },
+
   { img1: "./pic2.png", id: 1 },
   { img1: "./pic3.png", id: 2 },
   { img1: "./pic4.png", id: 3 },
   { img1: "./pic5.png", id: 4 },
   { img1: "./pic6.png", id: 5 },
-  { img1: "./pi9.jpg", id: 6 },
+  { img1: "./LOSE.png", id: 6 },
   
 ];
 
@@ -140,7 +140,7 @@ array.forEach((element, index) => {
     if(counTrue===word.length){
       img.innerText = "";
       const image1 = document.createElement("img");
-      image1.src="./pic8.jpg"
+      image1.src="./win.png"
       img.append(image1);
     }
      
