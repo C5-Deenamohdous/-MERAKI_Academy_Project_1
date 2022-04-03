@@ -111,12 +111,12 @@ const array = [
 ];
 
 let imgArr = [
-  { img1: "./pic2.png", id: 1 },
-  { img1: "./pic3.png", id: 2 },
-  { img1: "./pic4.png", id: 3 },
-  { img1: "./pic5.png", id: 4 },
-  { img1: "./pic6.png", id: 5 },
-  { img1: "./LOSE.png", id: 6 },
+  { img1: "./assets/Images/pic2.png", id: 1 },
+  { img1: "./assets/Images/pic3.png", id: 2 },
+  { img1: "./assets/Images/pic4.png", id: 3 },
+  { img1: "./assets/Images/pic5.png", id: 4 },
+  { img1: "./assets/Images/pic6.png", id: 5 },
+  { img1: "./assets/Images/LOSE.png", id: 6 },
 ];
 
 let count = 0;
@@ -167,7 +167,7 @@ array.forEach((element, index) => {
 let isPlaying = false;
 const playSound = () => {
   isPlaying = true;
-  const audio = new Audio("./sad-piano-atmosphere-no-pad-22213.mp3");
+  const audio = new Audio("./assets/Audio/sad-piano-atmosphere-no-pad-22213.mp3");
 
   audio.play();
 };
