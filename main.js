@@ -149,7 +149,7 @@ array.forEach((element, index) => {
       if (counTrue === word.length) {
         img.innerText = "";
         const image1 = document.createElement("img");
-        image1.src = "./win.png";
+        image1.src = "./assets/Images/win.png";
         img.append(image1);
         con3.style.display = "block";
       }
