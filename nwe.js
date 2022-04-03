@@ -122,8 +122,9 @@ array.forEach((element, index) => {
   right.append(buttonCon);
   buttonCon.append(buttons);
   buttons.id = element;
-  buttons.style.color = "red";
+  buttons.style.color = "blue";
   buttons.style.width = "70px";
+  buttons.style.border= "solid black 5px" ;
   buttons.addEventListener("click", (e) => {
     if (word.indexOf(e.target.id) !== -1) {
       buttons.style.backgroundColor = "blue";
