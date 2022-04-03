@@ -1,139 +1,137 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.parent{
-display: flex;
-/* flex-direction: column; */
+.parent {
+  display: flex;
+  /* flex-direction: column; */
 }
-.hero{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 800px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
 }
 .con1 {
-    
-    background-image: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f");
-     display: block;
-    background-size: cover;
+  background-image: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f");
+  display: block;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+@media all and (max-width: 800px) {
+  .hero {
     display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
-    height:100%;
-   width: 100%;
-   align-items: center;
+    background-color: white;
   }
-  @media all and (max-width:800px) {
-      .hero{ display: flex;
-background-color: white;
-      }
-  }
-
-#start1{
-    margin-top:20px;
-    width: 150px;
-    height: 70px;
-    border-radius: 10px;
-    color: rgb(228, 203, 203);
-    font-size:x-large;
-    background-color: crimson;
 }
 
-#about1{
-    margin-top:50px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    color: rgb(228, 203, 203);
-    font-size:large;
-    background-color: crimson;
-}
-#music1{
-    margin-top:70px;
-    width: 60px;
-    height: 40px;
-    border-radius: 10px;
-    color: rgb(228, 203, 203);
-    font-size:medium;
-    background-color: crimson;
+#start1 {
+  margin-top: 20px;
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+  color: rgb(228, 203, 203);
+  font-size: x-large;
+  background-color: crimson;
 }
 
-#con2{
-    background-color: rgb(10, 75, 161);
-  
-    display: none;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+#about1 {
+  margin-top: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  color: rgb(228, 203, 203);
+  font-size: large;
+  background-color: crimson;
 }
-#left{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    /* background-image: url(./netflix.jpg); */
-}
-#right{
-    display: flex;
-    flex-direction: column;
-    height:300px;
-    width: 100%;
-}
-#title{
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 15%;
-   color:rgb(199, 9, 9);
-   background-color: white;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#first{
-width: 30%;    
+#music1 {
+  margin-top: 70px;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(228, 203, 203);
+  font-size: medium;
+  background-color: crimson;
 }
 
-#second{
-    height: 50%;
-    width: 100%;
+#con2 {
+  background-color: rgb(10, 75, 161);
+
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+#left {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  /* background-image: url(./netflix.jpg); */
+}
+#right {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+}
+#title {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  color: rgb(199, 9, 9);
+  background-color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#first {
+  width: 30%;
+}
+
+#second {
+  height: 50%;
+  width: 100%;
   padding-left: 200px;
   font-size: 40px;
-  
 }
-#buttonCon{
-height: 50%;
-padding-top: 50px;
-padding-left: 150px;
-border: 20px;
+#buttonCon {
+  height: 50%;
+  padding-top: 50px;
+  padding-left: 150px;
+  border: 20px;
 }
-#try{
+#try {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: left;
   width: 5%;
   border: solid blue;
 }
-image{
-    width: 40%;
-    height: 60%;
+image {
+  width: 40%;
+  height: 60%;
 }
-#p4{
-    display:none;
-    padding: 30px;
-    border:darkmagenta solid 10px ;
-}
-
-#con3{
-    display: none;
-}
-#back{
-    display: flex;
-    flex-direction:row;
-  
-    justify-content: left;
-    width: 5%;
-    border: solid blue;
+#p4 {
+  display: none;
+  padding: 30px;
+  border: darkmagenta solid 10px;
 }
 
+#con3 {
+  display: none;
+}
+#back {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: left;
+  width: 5%;
+  border: solid blue;
+}

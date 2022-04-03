@@ -12,7 +12,7 @@ const about = document.querySelector("#about");
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const back = document.querySelector("#back");
-const music=document.querySelector("#music");
+const music = document.querySelector("#music");
 
 let series = [
   "vikings",
@@ -33,7 +33,6 @@ const random = () => {
 };
 const word = random();
 
-
 const game = () => {
   console.log(word);
 
@@ -41,35 +40,31 @@ const game = () => {
   con2.style.display = "block";
   p4.style.display = "none";
   word.split("").forEach((element, index) => {
-    if(element !== " "){
+    if (element !== " ") {
       const span = document.createElement("span");
       span.innerText = " ___ ";
       span.id = index;
-      
+
       con.append(span);
     } else {
       const span = document.createElement("span");
       span.innerText = " ";
       span.id = index;
       con.append(span);
-      counTrue++
+      counTrue++;
     }
-
   });
 };
 start.addEventListener("click", game);
-
 
 const tryfun = () => {
   con1.style.display = "block";
   con3.style.display = "none";
   con2.style.display = "none";
   p4.style.display = "none";
-  
 };
 
 try1.addEventListener("click", tryfun);
-
 
 const about1 = () => {
   con1.style.display = "none";
@@ -79,14 +74,13 @@ const about1 = () => {
 };
 about.addEventListener("click", about1);
 
-
-const backfun=()=>{
+const backfun = () => {
   con1.style.display = "block";
   con3.style.display = "none";
   con2.style.display = "none";
   p4.style.display = "none";
-}
-back.addEventListener('click',backfun)
+};
+back.addEventListener("click", backfun);
 const array = [
   "a",
   "b",
@@ -117,18 +111,16 @@ const array = [
 ];
 
 let imgArr = [
-
   { img1: "./pic2.png", id: 1 },
   { img1: "./pic3.png", id: 2 },
   { img1: "./pic4.png", id: 3 },
   { img1: "./pic5.png", id: 4 },
   { img1: "./pic6.png", id: 5 },
   { img1: "./LOSE.png", id: 6 },
-  
 ];
 
 let count = 0;
-let counTrue=0
+let counTrue = 0;
 array.forEach((element, index) => {
   const buttons = document.createElement("button");
   buttons.innerText = element;
@@ -140,28 +132,27 @@ array.forEach((element, index) => {
   buttons.id = element;
   buttons.style.color = "blue";
   buttons.style.width = "70px";
-  buttons.style.border= "solid black 5px" ;
+  buttons.style.border = "solid black 5px";
   buttons.addEventListener("click", (e) => {
     if (word.indexOf(e.target.id) !== -1) {
       buttons.style.backgroundColor = "blue";
-      const span = document.querySelectorAll("span")
+      const span = document.querySelectorAll("span");
       // console.log("span",span.length)
-    // span[word.indexOf(e.target.id)].innerText=(e.target.id);
-    for (let i = 0; i <word.length; i++) {
-        if (e.target.id===word[i]){
+      // span[word.indexOf(e.target.id)].innerText=(e.target.id);
+      for (let i = 0; i < word.length; i++) {
+        if (e.target.id === word[i]) {
           // console.log("span[i]",span[i],span)
-          span[i].innerText=e.target.id;
+          span[i].innerText = e.target.id;
           counTrue++;
         }
-    }
-    if(counTrue===word.length){
-      img.innerText = "";
-      const image1 = document.createElement("img");
-      image1.src="./win.png"
-      img.append(image1);
-      con3.style.display = "block";
-    }
-     
+      }
+      if (counTrue === word.length) {
+        img.innerText = "";
+        const image1 = document.createElement("img");
+        image1.src = "./win.png";
+        img.append(image1);
+        con3.style.display = "block";
+      }
     } else {
       img.innerText = "";
       const image = document.createElement("img");
@@ -173,16 +164,12 @@ array.forEach((element, index) => {
   });
 });
 
-let isPlaying=false;
-const playSound=()=>{
-   isPlaying=true;
-   const audio = new Audio('./sad-piano-atmosphere-no-pad-22213.mp3');
+let isPlaying = false;
+const playSound = () => {
+  isPlaying = true;
+  const audio = new Audio("./sad-piano-atmosphere-no-pad-22213.mp3");
 
-   audio.play()
+  audio.play();
+};
 
-}
-
-music.addEventListener('click',playSound)
-
-
-
+music.addEventListener("click", playSound);
