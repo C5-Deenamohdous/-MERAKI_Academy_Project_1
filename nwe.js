@@ -105,7 +105,7 @@ let imgArr = [
   { img1: "./pic4.png", id: 3 },
   { img1: "./pic5.png", id: 4 },
   { img1: "./pic6.png", id: 5 },
-  { img1: "./pi8.jpg", id: 6 },
+  { img1: "./pic9.jpg", id: 6 },
   
 ];
 
@@ -124,11 +124,11 @@ array.forEach((element, index) => {
     if (word.indexOf(e.target.id) !== -1) {
       buttons.style.backgroundColor = "blue";
       const span = document.querySelectorAll("span")
-      console.log("span",span.length)
+      // console.log("span",span.length)
     // span[word.indexOf(e.target.id)].innerText=(e.target.id);
     for (let i = 0; i <word.length; i++) {
         if (e.target.id===word[i]){
-          console.log("span[i]",span[i],span)
+          // console.log("span[i]",span[i],span)
           span[i].innerText=e.target.id;
           counTrue++;
         }
@@ -136,7 +136,7 @@ array.forEach((element, index) => {
     if(counTrue===word.length){
       img.innerText = "";
       const image1 = document.createElement("img");
-      image1.src="./p9.webp"
+      image1.src="./pic8.jpg"
       img.append(image1);
     }
      
