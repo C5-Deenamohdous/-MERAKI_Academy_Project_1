@@ -167,7 +167,9 @@ array.forEach((element, index) => {
 let isPlaying = false;
 const playSound = () => {
   isPlaying = true;
-  const audio = new Audio("./assets/Audio/sad-piano-atmosphere-no-pad-22213.mp3");
+  const audio = new Audio(
+    "./assets/Audio/sad-piano-atmosphere-no-pad-22213.mp3"
+  );
 
   audio.play();
 };

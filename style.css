@@ -132,6 +132,6 @@ image {
   flex-direction: row;
 
   justify-content: left;
-  width:30px;
+  width: 30px;
   border: solid blue;
 }
