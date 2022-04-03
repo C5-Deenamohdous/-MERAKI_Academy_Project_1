@@ -62,8 +62,8 @@ background-color: white;
 
 #con2{
     background-color: rgb(10, 75, 161);
-    
-    display: flex;
+  
+    display: none;
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -115,8 +115,12 @@ image{
     width: 40%;
     height: 60%;
 }
+#p4{
+    display:none;
+}
 
-
-
+#con3{
+    display: none;
+}
 
 

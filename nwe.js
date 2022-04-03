@@ -143,6 +143,7 @@ array.forEach((element, index) => {
       const image1 = document.createElement("img");
       image1.src="./win.png"
       img.append(image1);
+      con3.style.display = "block";
     }
      
     } else {
@@ -151,20 +152,21 @@ array.forEach((element, index) => {
       image.src = imgArr[count].img1;
       img.append(image);
       count++;
-      
+      con3.style.display = "block";
     }
   });
 });
 
 let isPlaying=false;
  const music=document.querySelector("#music");
-const track=document.createElement('audio');
+// const track=document.createElement('audio');
 const playSound=()=>{
    isPlaying=true;
-   
-  track.play()
-  // src="https://www.youtube.com/watch?v=WJ3-F02-F_Y&t=53s"
- 
+   const audio = new Audio('./sad-piano-atmosphere-no-pad-22213.mp3');
+
+   audio.play()
+
 }
+
 music.addEventListener('click',playSound)
 
