@@ -23,6 +23,9 @@ background-color: white;
     width: 50%;
     
 }
+#music{
+    align-items: flex-end;
+}
 #start{
 background-color:blue;
 color: black;
