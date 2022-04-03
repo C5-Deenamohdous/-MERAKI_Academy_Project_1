@@ -65,6 +65,7 @@ const tryfun = () => {
   con3.style.display = "none";
   con2.style.display = "none";
   p4.style.display = "none";
+  
 };
 
 try1.addEventListener("click", tryfun);
