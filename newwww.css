@@ -117,6 +117,8 @@ image{
 }
 #p4{
     display:none;
+    padding: 30px;
+    border:darkmagenta solid 10px ;
 }
 
 #con3{

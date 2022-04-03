@@ -11,6 +11,9 @@ const p4 = document.querySelector("#p4");
 const about = document.querySelector("#about");
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
+const back = document.querySelector("#back");
+const music=document.querySelector("#music");
+
 let series = [
   "vikings",
   "banshee",
@@ -29,6 +32,8 @@ const random = () => {
   return series[Math.floor(Math.random() * series.length)];
 };
 const word = random();
+
+
 const game = () => {
   console.log(word);
 
@@ -54,6 +59,7 @@ const game = () => {
 };
 start.addEventListener("click", game);
 
+
 const tryfun = () => {
   con1.style.display = "block";
   con3.style.display = "none";
@@ -63,6 +69,7 @@ const tryfun = () => {
 
 try1.addEventListener("click", tryfun);
 
+
 const about1 = () => {
   con1.style.display = "none";
   con3.style.display = "none";
@@ -71,6 +78,14 @@ const about1 = () => {
 };
 about.addEventListener("click", about1);
 
+
+const backfun=()=>{
+  con1.style.display = "block";
+  con3.style.display = "none";
+  con2.style.display = "none";
+  p4.style.display = "none";
+}
+back.addEventListener('click',backfun)
 const array = [
   "a",
   "b",
@@ -158,8 +173,6 @@ array.forEach((element, index) => {
 });
 
 let isPlaying=false;
- const music=document.querySelector("#music");
-// const track=document.createElement('audio');
 const playSound=()=>{
    isPlaying=true;
    const audio = new Audio('./sad-piano-atmosphere-no-pad-22213.mp3');
@@ -169,4 +182,6 @@ const playSound=()=>{
 }
 
 music.addEventListener('click',playSound)
+
+
 
