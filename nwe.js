@@ -9,7 +9,8 @@ const con = document.querySelector(".second");
 const con3 = document.querySelector("#con3");
 const p4 = document.querySelector("#p4");
 const about = document.querySelector("#about");
-
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
 let series = [
   "vikings",
   "banshee",
@@ -39,6 +40,7 @@ const game = () => {
       const span = document.createElement("span");
       span.innerText = " ___ ";
       span.id = index;
+      
       con.append(span);
     } else {
       const span = document.createElement("span");
@@ -105,7 +107,7 @@ let imgArr = [
   { img1: "./pic4.png", id: 3 },
   { img1: "./pic5.png", id: 4 },
   { img1: "./pic6.png", id: 5 },
-  { img1: "./pic9.jpg", id: 6 },
+  { img1: "./pi9.jpg", id: 6 },
   
 ];
 
@@ -115,11 +117,13 @@ array.forEach((element, index) => {
   const buttons = document.createElement("button");
   buttons.innerText = element;
   hero.append(con2);
-  con2.append(buttonCon);
+  con2.append(left);
+  left.append(right);
+  right.append(buttonCon);
   buttonCon.append(buttons);
   buttons.id = element;
   buttons.style.color = "red";
-  buttons.style.width = "30px";
+  buttons.style.width = "70px";
   buttons.addEventListener("click", (e) => {
     if (word.indexOf(e.target.id) !== -1) {
       buttons.style.backgroundColor = "blue";

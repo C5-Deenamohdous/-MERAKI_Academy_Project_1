@@ -1,12 +1,29 @@
-.hero {
-    background-image: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f");
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.parent{
+display: flex;
+/* flex-direction: column; */
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+}
+.con1 {
     
+    background-image: url("https://store-images.s-microsoft.com/image/apps.23216.9007199266246289.99eca207-26e7-4c4a-b02f-3ea96d21b37b.f89edb6e-7a3c-44a8-9e93-aac220a9051f");
+     display: block;
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height:500px;
+    justify-content: center;
+    /* flex-direction: column; */
+    height:100%;
    width: 100%;
+   align-items: center;
   }
   @media all and (max-width:800px) {
       .hero{ display: flex;
@@ -14,66 +31,98 @@ background-color: white;
       }
   }
 
-#con1{
-    display: block;
+#start1{
+    margin-top:20px;
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    color: rgb(228, 203, 203);
+    font-size:x-large;
+    background-color: crimson;
+}
+
+#about1{
+    margin-top:50px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(228, 203, 203);
+    font-size:large;
+    background-color: crimson;
+}
+#music1{
+    margin-top:70px;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    color: rgb(228, 203, 203);
+    font-size:medium;
+    background-color: crimson;
+}
+
+#con2{
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
-    padding-top:250px;
-    width: 50%;
-    
+    height: 100%;
+    width: 100%;
 }
-#music{
+#left{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(./netflix.jpg); */
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    height:300px;
+    width: 100%;
+}
+#title{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+   color: rgb(51, 27, 27);
+}
+#first{
+width: 30%;    
+}
+
+#second{
+    height: 50%;
+    width: 100%;
+  padding-left: 200px;
+  
+}
+#buttonCon{
+height: 50%;
+padding-top: 50px;
+padding-left: 150px;
 
 }
-#start{
-background-color:blue;
-color: black;
-width:70px;
-height: 50px;
-}
-.intro{
- /* background-color: rgb(19, 2, 2);  */
-     color: rgb(230, 226, 20); 
-     font-size: 30px; 
-     width: 100%;
-padding-top: 50px;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-button{
+
+/* button{
     /* background-color: black; */
     /* color: white; */
-    width:70px;
+    /* width:70px;
     height: 50px;
     font-size:20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-#con2{
-    display: none;
-    background-color: white;
-    padding-top: 150px;
-display: flex;
-flex-direction: column; 
-flex-wrap: wrap;
- gap: 20px;
-width: 100%;
-}
-.title{
-   width:100%;
-   font-size:30px;
-   padding-left: 500px;
-   /* border: rgb(149, 211, 25); */
-   color: blueviolet;
-}
-.first{
-    padding-right: 0px;
+} */ 
+
+
+/* .first{ */
+    /* padding-right: 0px; */
     /* display: flex; */
-    flex-direction: row;
-    width: 50%;
+    /* flex-direction: row;
+    width: 50%; */
     /* justify-content: center; */
     /* border-right: solid black; */
-    border-right: solid black;
-}
+    /* border-right: solid black; */
+/* }
 .second{
     width: 50%;
     flex-direction:row;
@@ -81,10 +130,10 @@ width: 100%;
 #buttonCon{
     flex-direction: column; 
      width: 50%;
-}
+} */
 
 
-
+/* 
 #third{
     padding-top: 500px;
    display: flex;
@@ -92,9 +141,9 @@ width: 100%;
    justify-content: center;
 width: 50%;
 
-}
+} */ 
 
-.con3{
+/* .con3{
    
    display: flex;
 padding-top: 800px;
@@ -112,4 +161,4 @@ justify-self: end;
    width: 100%; 
 padding-left: 400px;
  /* background-color: black; */
-}
+/* } */
