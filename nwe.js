@@ -23,6 +23,7 @@ let series = [
   "unbelievable",
   "lupin",
 ];
+
 const random = () => {
   return series[Math.floor(Math.random() * series.length)];
 };
@@ -34,10 +35,18 @@ const game = () => {
   con2.style.display = "block";
   p4.style.display = "none";
   word.split("").forEach((element, index) => {
-    const span = document.createElement("span");
-    span.innerText = " ___ ";
-    span.id = index;
-    con.append(span);
+    if(element !== " "){
+      const span = document.createElement("span");
+      span.innerText = " ___ ";
+      span.id = index;
+      con.append(span);
+    } else {
+      const span = document.createElement("span");
+      span.innerText = " ";
+      span.id = index;
+      con.append(span);
+      counTrue++
+    }
 
   });
 };
@@ -96,7 +105,7 @@ let imgArr = [
   { img1: "./pic4.png", id: 3 },
   { img1: "./pic5.png", id: 4 },
   { img1: "./pic6.png", id: 5 },
-  { img1: "./pic8.jpg", id: 6 },
+  { img1: "./pi8.jpg", id: 6 },
   
 ];
 
@@ -114,17 +123,16 @@ array.forEach((element, index) => {
   buttons.addEventListener("click", (e) => {
     if (word.indexOf(e.target.id) !== -1) {
       buttons.style.backgroundColor = "blue";
-      // const box= document.querySelector("#box");
       const span = document.querySelectorAll("span")
+      console.log("span",span.length)
     // span[word.indexOf(e.target.id)].innerText=(e.target.id);
     for (let i = 0; i <word.length; i++) {
-      // console.log(word[i]);
-      // console.log(e.target.id);
         if (e.target.id===word[i]){
+          console.log("span[i]",span[i],span)
           span[i].innerText=e.target.id;
+          counTrue++;
         }
     }
-    counTrue++;
     if(counTrue===word.length){
       img.innerText = "";
       const image1 = document.createElement("img");
@@ -142,3 +150,16 @@ array.forEach((element, index) => {
     }
   });
 });
+
+let isPlaying=false;
+ const music=document.querySelector("#music");
+const track=document.createElement('audio');
+const playSound=()=>{
+   isPlaying=true;
+   
+  track.play()
+  // src="https://www.youtube.com/watch?v=WJ3-F02-F_Y&t=53s"
+ 
+}
+music.addEventListener('click',playSound)
+
